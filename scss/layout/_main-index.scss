@@ -1,0 +1,43 @@
+/*titulos y parrafos y fondo index*/
+main {
+    .wallp-image{
+        background-image: url(../assets/img/fondo-index.jpg);
+        height: 80vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .title-index{
+                h1{
+                    display: flex;
+                    justify-content: center;
+                    font-family: $font-text;
+                    font-size: $font-size-title;
+                    animation: backInLeft; 
+                    animation-duration: 4s;
+                }
+                p{
+                    letter-spacing: 1.8px;
+                    font-family: $font-text;
+                    font-size: $font-size-p;
+                    text-align: center;
+                }
+            }   
+    #gallery{
+            margin: 0;
+            padding: 1.563rem;
+            img{
+                width: 100%;
+                height: 28rem;
+                border-radius: 5px;
+                box-shadow: 5px 5px 10px 5px nth($colors,3);
+                opacity: 2;
+                transition: all 300ms;
+                object-fit: cover;
+            }
+            .col-lg-4{
+                margin: 0;
+                padding: 1.563rem;
+            }
+        }
+}

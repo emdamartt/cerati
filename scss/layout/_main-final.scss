@@ -1,0 +1,30 @@
+/*ESTILOS HTML FINAL*/
+.final {
+    background-color: rgb(224, 185, 12);
+    .title-index{
+        h1{
+            font-size: $font-size-title;
+            font-family: $font-text;
+            padding-top: 120px;
+        }
+        p{
+            font-size: $font-size-p;
+            font-family: $font-text;
+        }
+    }
+    .iframe-final{
+        width: 70%;
+        height: 450px;
+        border-radius: 50px;
+    }
+    .imagen-final{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin-bottom: 20px;
+            box-shadow: 10px 10px 10px black;
+            border-radius: 20px;
+        }
+    }
+}

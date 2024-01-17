@@ -1,0 +1,32 @@
+
+                                    // fuentes de google
+@import './base/google-fonts';
+                                    // creacion de variables
+@import './utilities/variables';
+                                    // creacion de variables
+@import './utilities/maps';
+                                   // creacion de listas
+@import './base/listas';
+                                    // creacion de reset
+@import './base/reset';
+                                    // creacion de  header
+@import './layout/header';
+                                    // creacion de header otros html
+@import './layout/header-otros';
+                                    // creacion de main-index
+@import './layout/main-index';
+                                    // creacion de main-galeria
+@import './layout/main-galeria';
+                                    // creacion de main-galeria
+@import './layout/main-contacto';
+                                    // creacion de mediaqueries 520
+@import './layout/media/media520';
+
+@import './layout/media/media600';
+                                    // creacion de main-discografia
+@import './layout/main-discografia';
+                                    // creacion de main-final
+@import './layout/main-final';
+                                    // creacion de footer
+@import './layout/_footer';
+

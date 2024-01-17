@@ -1,0 +1,74 @@
+/*Estilos contacto*/
+.contacto{
+    background-image: url(../assets/img/fondo\ Contactos2.jpg);
+    background-position: center;
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+    .contacto-form{
+        font-size: 2.3em;
+        text-align: center;
+        letter-spacing: 7px;
+        font-family: $font-text;
+        color: nth($colors ,10);
+        padding: 50px 0;
+    }
+    #form{
+        width: 500px;
+        backdrop-filter: blur(2px);
+        input{
+            font-family: $font-text;
+            font-size: 0.875em;
+            height: 3.125rem;
+            padding: 0px 15px 0px 15px;
+            outline: none;
+            background-color: $bg-form;
+            color: nth($colors , 1);
+            border: solid 1px nth($colors , 8);
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: nth($colors , 9);
+                color: nth($colors , 4);
+            }
+        }
+        textarea{
+            height: 6.875rem;
+            max-height: 110px;
+            padding: 15px;
+            background: transparent;
+            outline: none;
+            background-color:$bg-form;
+            color: nth($colors ,3);
+            font-family: $font-text;
+            font-size: 0.875em;
+            border: solid 1px nth($colors, 8);
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: nth($colors , 9);
+                color: nth($colors , 10);
+            }
+        }
+        #submit{
+            padding: 0;
+            margin: -5px 0px 0px 0px;
+            font-family: $font-text;
+            font-size: 0.875em;
+            color:nth($colors , 11);
+            outline:none;
+            cursor: pointer;
+            border: solid 1px nth($colors , 8);
+            border-top: none;
+            &:hover{
+                background-color: $bg-hover-contact;
+                color: nth($colors , 1);
+            }
+        }
+    }
+}
+        

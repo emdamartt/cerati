@@ -1,0 +1,24 @@
+/*Header index*/
+.containerCont{
+    background-color:nth($colors, 1 );
+        }
+        .list{
+            align-items: center;
+        }
+            .list li {
+                list-style: none;
+                text-decoration: none;
+                position:relative;
+                display:inline-block;
+            }
+                .nav-link {
+                    font-family: $font-text;
+                }
+                    .list li a {
+                        margin: 0 40px;
+                        &:hover{
+                            background-color: nth($colors, 2 );
+                            border-radius: 6px;
+                            border-bottom: 20px;
+                        }
+                    }

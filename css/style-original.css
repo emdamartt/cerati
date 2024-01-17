@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+/* Estilos Index */
+/*Imagen de Portada*/
+.wallp-image{
+    background-image: url(../assets/img/fondo\ inicio.jpg);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.back img {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos links navbar index*/
+.containerCont {
+    background-color: rgb(0, 0, 0);
+}
+.navbar-rest {
+    margin-top: -30px;
+}
+.list li{
+    list-style: none;
+    text-decoration: none;
+    position:relative;
+    display:inline-block;
+}
+.nav-link {
+    font-family: 'Oswald', sans-serif;
+}
+.list li a{
+    margin:0 40px;
+}
+.nav-item a:hover {
+    background-color: #fdfdfd2d;
+    border-radius: 6px;
+}
+/* Titulos Index */
+.title-index h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.3em;
+    animation: backInLeft; 
+    animation-duration: 5s;
+}
+/* Parrafos index */
+.title-index p{
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+/*Galeria Index*/
+#gallery img {
+    width: 100%;
+    height: 28rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 5px #4b4c4d;
+    opacity: 2;
+    transition: all 300ms;
+    object-fit: cover;
+}
+#gallery, .col-lg-4 {
+    margin: 0 !important;
+    padding: 1.563rem;
+}
+/*Fin de Galeria index*/
+/* Estilos html galeria */
+.gallery-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 50px;
+    font-size: 3.3em;
+    letter-spacing: 7px;
+}
+.gallery-container p {
+    margin:30px 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25rem;
+}
+
+/* Estilos Html Contactos */
+                                                /* Backgroud image form */
+#form {
+    width: 500px;
+    backdrop-filter: blur(2px);
+}
+.contacto {
+    background-image: url(../assets/img/fondo\ Contactos2.jpg);
+    background-position: center;
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+}
+.contacto-form {
+    font-size: 2.3em;
+    text-align: center;
+    letter-spacing: 7px;
+    font-family: 'Oswald', sans-serif;
+    color: rgba(255, 255, 255, 0.918);
+    padding: 50px 0;
+} 
+input {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.875em;
+    height: 3.125rem;
+    padding: 0px 15px 0px 15px;
+    outline: none;
+    background-color: #0c0c0c34;
+    color: #000000ce;
+    border: solid 1px #b3aca7;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+input:hover {
+    background-color: #0c0c0c34;
+    color: #e2dedb;
+}
+textarea {
+    height: 6.875rem;
+    max-height: 110px;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    background-color: #0c0c0c34;
+    color: #726659;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.875em;
+    border: solid 1px #b3aca7;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+textarea:hover {
+    background-color: #0c0c0c34;
+    color: #e2dedb;
+}
+#submit {
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.875em;
+    color: #b3aca7;
+    outline:none;
+    cursor: pointer;
+    border: solid 1px #b3aca7;
+    border-top: none;
+}
+/* media queries html contacto */
+@media (max-width:520px){
+    #form {
+        width: 80%;
+}
+.contacto-form {
+    font-size: 1.5em;
+} 
+}
+#submit:hover {
+    background-color: #e2dedb;
+    color: black;
+}
+/* Estilos discografia */
+.back-color {
+    background-color: rgb(255, 255, 255);
+}
+.title-discografy {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.3em;
+}
+.card {
+    position: relative;
+    width: 100%;
+    height: 21.875rem;
+    background: transparent;
+}
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .9s;
+}
+.front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+.back {
+    transform: perspective(600px) rotateY(180deg);
+    padding: 15px;
+    justify-content: space-between;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 5px 10px black;
+}
+.back h3{
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #4b4c4d;
+}
+.back p{
+    letter-spacing: 1px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+.link {
+    border-top: solid 1px #4b4c4d;
+    height: 50px;
+    line-height: 50px;
+}
+.link a {
+    margin-top: 20px;
+    color:#fdfdfd;
+    background-color: #000;
+    border: solid 1px;
+}
+.icons {
+    margin: 50px auto;
+    font-size: 100px;
+}
+.icons:hover {
+    animation: fa-beat; 
+    animation-duration: 2s;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/* ESTILO HTML FINAL */
+.iframe-final {
+    width: 100%;
+    height: 15.625rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 5px #4b4c4d;
+}
+/* Estilos del Footer */
+.footer-gallery {
+    margin-top: 20px;
+}
+.text-center {
+    background-color: rgb(0, 0, 0);
+}

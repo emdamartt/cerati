@@ -1,0 +1,95 @@
+/* ESTILOS HTML DISCOGRAFIA */
+.back-color{
+    background-color: rgb(255, 238, 0);
+    .container{
+        .title-discografy{
+            font-family: $font-text;
+            font-size: $font-size-title;
+            animation-duration: 5s;
+        }
+        .card{
+            position: relative;
+            width: 100%;
+            height: 21.875rem;
+            background: transparent;
+            border: none;
+            .face{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .9s;
+            }
+            .front{
+                transform: perspective(600px) rotateY(0deg);
+                box-shadow: 0 5px 10px nth($colors, 1  );
+                img{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -2;
+                }
+            }
+            .back{
+                transform: perspective(600px) rotateY(180deg);
+                padding: 15px;
+                justify-content: space-between;
+                text-align: center;
+                background-color: nth($colors , 4);
+                box-shadow: 0 5px 10px nth($colors, 1 );
+                h3{
+                    margin-top: 20px;
+                    font-family: $font-text;
+                    font-size: $font-size-h3;
+                    letter-spacing: 2px;
+                    color: nth($colors , 3 );
+                    p{
+                        letter-spacing: 1px;
+                        font-family: $font-text;
+                        font-size: $font-size-p;
+                        color: nth($colors ,1);
+                    }
+                }
+                .link{
+                    border-top: solid 1px nth($colors ,4 );
+                    height: 50px;
+                    line-height: map-get($size , l);
+                    a{
+                        margin-top: 20px;
+                        color:nth($colors ,4 );
+                        background-color:$bg-buttom;
+                        font-weight: map-get($size , lw);
+                        &:hover{
+                            background-color: $bg-disc;
+                            color: nth($colors ,1 );
+                            font-weight: map-get($size ,fw);
+                            
+                        }
+                    }
+                } 
+                .butt{
+                    @extend .link;
+                } //EXTENDS
+                .butt-extend{
+                    @extend .link;
+                }
+                .icons{
+                    margin: 50px auto;
+                    font-size: 100px;
+                    &:hover{
+                        animation: fa-beat; 
+                        animation-duration: 2s;
+                    }
+                }
+            }
+            &:hover .front{
+                transform: perspective(600px) rotateY(180deg);
+            }
+            &:hover .back{
+                transform: perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+}

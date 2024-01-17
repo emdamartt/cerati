@@ -1,0 +1,18 @@
+/* Estilos html galeria */
+    .gallery-container {
+        .gallery-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-text;
+            margin-top: 100px;
+            font-size: $font-size-title;
+            letter-spacing: 7px;
+            animation-duration: 5s;
+        }
+        p{
+            margin:30px 20px;
+            font-family: $font-text;
+            font-size: $font-size-p;
+        }
+    }
